@@ -1,0 +1,187 @@
+body {
+  font-family: sans-serif;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.navBar {
+  background-color: #ff7171;
+  display: flex;
+  justify-content: space-evenly;
+  height: 40px;
+  overflow: hidden;
+}
+
+.navBar a {
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+}
+
+#menu {
+  height: 30px;
+  width: 30px;
+  margin-top: 3px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-width: 100%;
+  margin: 0;
+  background: rgb(255, 244, 176);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 244, 176, 1) 47%,
+    rgba(255, 181, 237, 1) 100%
+  );
+}
+
+.content {
+  flex: 1;
+  align-items: center;
+  padding: 50px;
+  margin-top: 150px;
+}
+
+.image {
+  flex: 1;
+  background-image: url("./img/pexels-robin-stickel-70497.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.text {
+  margin-bottom: 10px;
+}
+
+.button {
+  padding: 20px 50px;
+  background-color: rgb(241, 131, 150);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
+.card-2 {
+  display: flex;
+  overflow: hidden;
+  margin-top: 20px;
+  background: rgb(255, 244, 176);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 244, 176, 1) 47%,
+    rgba(255, 181, 237, 1) 100%
+  );
+}
+
+.column {
+  flex: 1;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.column img {
+  max-width: 100%;
+  height: auto;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.column .image-3 {
+  max-width: 100%;
+  height: auto;
+  margin-right: 150px;
+}
+
+.text-card {
+  background-color: rgb(231, 108, 129);
+  height: 194px;
+  width: 378px;
+  margin-top: 150px;
+  margin-right: 150px;
+  text-align: center;
+}
+
+.text-card-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.text-card-footer img {
+  height: 30px;
+  width: 30px;
+  margin-top: 6px;
+  margin-right: 100px;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .content {
+    padding: 30px;
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 20px;
+    margin-top: 100px;
+  }
+  .navBar {
+    flex-direction: column;
+    height: auto;
+  }
+  .navBar a {
+    margin: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 10px;
+    margin-top: 50px;
+  }
+  .navBar {
+    flex-direction: column;
+    height: auto;
+  }
+  .navBar a {
+    margin: 5px;
+  }
+  .card {
+    height: auto;
+  }
+  .column {
+    margin-right: 0;
+  }
+  .text-card {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+  }
+
+  .text-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-card p {
+    font-size: 0.9rem;
+  }
+
+  .text-card-footer {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
